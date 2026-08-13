@@ -11,7 +11,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+
 
 @Component
 @RequiredArgsConstructor
@@ -43,7 +44,7 @@ public class AdminSeeder implements CommandLineRunner {
             admin.setAccount(adminAccount);
             userRepository.save(admin);
 
-            Logger log = (Logger) LoggerFactory.getLogger(AdminSeeder.class);
+            Logger log = LoggerFactory.getLogger(AdminSeeder.class);
             log.info("Default admin created");
         }
     }
