@@ -85,11 +85,9 @@ mvn test
 
 ## What's not in here yet
 
-- Transaction history endpoints (list/get a user's past transactions)
 - Freezing an account after confirmed fraud (the `FROZEN` account status exists but nothing sets it yet)
 - Deposits aren't run through the fraud engine — only transfers are
 - Microservices split and Docker (planned next)
 
 ## Frontend
-
-<!-- link to the frontend repo, or a short note on the stack it's built with, once it's connected -->
+https://github.com/Abhishek-Sirugudu/secure-wallet-frontend.git
