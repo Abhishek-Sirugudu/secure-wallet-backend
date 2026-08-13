@@ -1,4 +1,4 @@
-# Digital Wallet with Fraud Detection
+# Secure Wallet with Fraud Detection
 
 A Spring Boot backend for a digital wallet: users hold a balance and transfer money to each other, and every transfer is screened by a rule-based fraud engine before it settles. Transfers that trip a rule don't complete automatically — they're held and routed to an admin for manual review.
 
