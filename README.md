@@ -1,10 +1,10 @@
-# Digital Wallet with Fraud Detection
+# Secure Wallet with Fraud Detection
 
 A Spring Boot backend for a digital wallet: users hold a balance and transfer money to each other, and every transfer is screened by a rule-based fraud engine before it settles. Transfers that trip a rule don't complete automatically — they're held and routed to an admin for manual review.
 
 ## Why this exists
 
-Most portfolio wallet projects are CRUD with a database behind them — create an account, move some numbers around. This one makes a decision: every transfer runs through fraud rules first, and money only reaches the receiver once the transfer passes cleanly or an admin explicitly clears it. It's a small-scale model of the kind of transfer-risk logic real payment platforms run in production.
+Most wallet projects are CRUD with a database behind them — create an account, move some numbers around. This one makes a decision: every transfer runs through fraud rules first, and money only reaches the receiver once the transfer passes cleanly or an admin explicitly clears it. It's a small-scale model of the kind of transfer-risk logic real payment platforms run in production.
 
 ## How a transfer works
 
