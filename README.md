@@ -25,7 +25,7 @@ Most wallet projects are CRUD with a database behind them — create an account,
 - Java, Spring Boot
 - Spring Data JPA / Hibernate
 - Spring Security — stateless JWT authentication, role-based method security (`@PreAuthorize`)
-- H2 (test profile) — <!-- confirm your dev/prod database here -->
+- H2 (test profile), PostgreSQL (Application).
 - JUnit 5, Mockito, MockMvc
 
 ## Architecture
@@ -81,7 +81,6 @@ mvn test
 
 - **Unit tests** (Mockito) for the individual fraud rules, in isolation from the database
 - **Controller tests** (MockMvc) for request/response behavior and auth enforcement
-- **One end-to-end integration test** that runs a full flagged transfer through fraud detection, blocks a non-admin from reviewing it, then has an admin clear it and verifies funds are released correctly — against a real (in-memory H2) database
 
 ## What's not in here yet
 
